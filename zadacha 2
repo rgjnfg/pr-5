@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <string.h>
+void substring(const char* src, char* dest, int start, int length) {
+    strncpy(dest, src + start, length);
+    dest[length] = '\0';
+}
+int main() {
+    char word[] = "yellow";
+    char result[4];
+    substring(word, result, 3, 3);
+    printf("Результат: %s\n", result); 
+    return 0;
+}
