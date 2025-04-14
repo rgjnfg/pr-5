@@ -1,7 +1,7 @@
 #include <stdio.h>
-#include <ctype.h> // для tolower()
+#include <ctype.h>
 int main() {
-    char letter = 'L'; // Теперь работает и с заглавными буквами
+    char letter = 'L'; 
     int position;
     if (isalpha(letter)) {
         position = tolower(letter) - 'a' + 1;
